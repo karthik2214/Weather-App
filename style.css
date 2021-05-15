@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+.box {
+  width: 30vw;
+  height: 50vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
+  background: #a5bbdd;
+  position: relative;
+  overflow: hidden; 
+  transform: translate3d(0,0,0);
+  min-width: 20rem;
+  min-height: 35rem;
+}
+
+
+
+.info {
+  position: absolute;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  z-index: 4;
+}
+
+.location {
+  margin-top: 1.5rem;
+  margin-bottom: 1.6rem;
+  margin-left: 5rem;
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.fa-street-view {
+  animation: rotates 3s linear infinite alternate;
+}
+
+#date {
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.temp {
+  margin-left: 15rem;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.temp-min-max {
+  text-align: center;
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@keyframes rotates {
+  from {
+    transform: translateX(-0.5rem);
+  }
+  to {
+   transform: translateX(0.5rem);
+  }
+}
+
+#weathercon {
+  height: 25%;
+margin-left: 16.4rem !important;
+  padding-top: 3rem;
+font-size: 7.8rem;
+animation: fas-anime 3s linear infinite alternate;
+}
+
+@keyframes fas-anime {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .location{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  }
+  #date {
+    font-size: 1.7rem;
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+  .temp{
+    font-size: 2rem;
+    margin-left: 5rem;
+  }
+  .temp-min-max{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 2.5rem;
+  }
+  #weathercon{
+    margin-left: 7rem !important;
+  }
+}
